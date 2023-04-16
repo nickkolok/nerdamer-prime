@@ -7,6 +7,7 @@ require('../Solve');
 
 describe('Solve', function () {
     it('debug problem of the day', function () {
+        expect(nerdamer('solve((5-3y)/(5+y)=(1-9y)/(3y-7),y)').toString()).toEqual('[0.5]');
     });
     it('should solve correctly', function () {
         expect(nerdamer('solve(x=y/3416.3333333333344, y)').toString()).toEqual('[(1073228064103962/314146179365)*x]');

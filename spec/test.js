@@ -7,12 +7,26 @@ require('../Algebra.js');
 require('../Calculus.js');
 require('../Solve.js');
 
-console.log(nerdamer('m=(34141034228515471851/614756350000000000000000000)*(3631430813109509/100837351+51955423*log(5+m))')
-    .solveFor("x").map(x=>x.text("decimals")).toString());
+let d;
 
-const a = nerdamer('solve(m=(34141034228515471851/614756350000000000000000000)*(3631430813109509/100837351+51955423*log(5+m)),m)')
-    .toString();
-const b = a.substring(1,a.length-1);
-const c = b.split(",");
-const d = c.map(x=>eval(x))
-console.log(d);
+//     d = nerdamer("log(0.01*s)")
+//     .divide("(-239263565+51955423*log(s))");
+// console.log(d.text());
+//     d = d.subtract(nerdamer("1"))
+// console.log(d.text());
+//     d = d.simplify();
+// console.log(d.text());
+
+d = nerdamer("(-239263565+51955423*log(s))^(-1)*(-51955423*log(s)+239263565+log((1/100)*s))");
+console.log(d.text());
+d = d.simplify();
+console.log(d.text());
+
+// console.log("version 2");
+// d = nerdamer("log(0.01*s)")
+//     .divide(nerdamer("-23926356+51955423*log(s)"))
+//     .subtract(nerdamer("1"));
+
+// console.log(d.text());
+// d= d.simplify();
+// console.log(d.text());
