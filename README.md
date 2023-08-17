@@ -18,13 +18,13 @@ YMMV.
 
 We have made some improvements - simplification of logs and squareroots, and bug fixes related to those areas and factoring. Unit tests
 are fixed except for a couple of known flaws. There will be further work in this area. We will also work on vectors, which are not 
-useful for our product [together.math](https://www.together.science/) today. Those will be breaking changes 
+useful for our product [together.math](https://www.together.science/) in their current form. Those will be breaking changes 
 (you are welcome to fork an earlier version). We might move to modules, and at some point will port the code to ECMAScript O-O features.
 Perhaps even TypeScript, but that would be a lot of work. 
 
 If you have a clear bug, file an issue with the code to repro. If you want a new feature - and that includes many things that you will
 think of as "obvious flaws" - file the issue, but we probably won't do it. But someone else can! We will absolutely consider compatible
-PRs, but best to [talk to us](mailto:info@together.science) before you start.
+PRs, but best to [talk to us](mailto:gunnar@together.science) before you start.
 
 Below follows the original README. Obviously, the npm instructions will install the original Nerdamer. I will update this README if we ever get into the game of releasing nerdamer-prime on npm. Until then, please be aware that the Nerdamer you find on npm follows the original (archived) repo.
 
